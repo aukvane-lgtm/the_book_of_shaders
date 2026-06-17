@@ -24,6 +24,7 @@ void main() {
     //float y = log(st.x*9.0 + 1.0)/log(10.0) log(st.x)不行因为st.x∈[0.0,1.0]
     //float y = sqrt(st.x)
     //float y = sin(st.x * PI) ;
+    //float y = sin(st.x * PI * 2.0 + u_time) * 0.5 + 0.5;
 
     vec3 color = vec3(y);
 
