@@ -19,7 +19,11 @@ float plot(vec2 st, float pct){
 void main() {
     vec2 st = gl_FragCoord.xy/u_resolution;
 
-	float y = exp(-st.x *3.0);
+	float y = exp(st.x*3.0)/exp(3.0);
+    //float y= pow(st.x,3.0) pow(x,a) 求x的a次幂
+    //float y = log(st.x*9.0 + 1.0)/log(10.0) log(st.x)不行因为st.x∈[0.0,1.0]
+    //float y = sqrt(st.x)
+    //float y = sin(st.x * PI) ;
 
     vec3 color = vec3(y);
 
