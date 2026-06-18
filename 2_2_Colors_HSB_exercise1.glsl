@@ -1,4 +1,6 @@
 //基于上一个范例的变体
+//Q1：Use a shaping function together with the conversion function from HSB to RGB to expand a particular hue value and shrink the rest.
+
 #ifdef GL_ES
 precision mediump float;
 #endif
