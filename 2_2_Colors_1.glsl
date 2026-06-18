@@ -14,6 +14,8 @@ void main() {
     
     float pct= abs(sin(u_time));
     color=mix(colorA,colorB,pct);
+    //mix(a, b, t) = a * (1 - t) + b * t，t=0时返回a，t=1时返回b，t在0和1之间时返回a和b的线性插值
+    //pct=0时，color=colorA；pct=1时，color=colorB；
 
     gl_FragColor = vec4(color,1.0);
 }
