@@ -26,14 +26,17 @@ void main(){
     // Use polar coordinates instead of cartesian
     vec2 toCenter = vec2(0.5)-st;
     float angle = atan(toCenter.y,toCenter.x);
+    float hue = (angle/TWO_PI) + 0.5;
+    //用hue代替了原先的angle/TWO_PI+0.5，方便后续对hue进行调整
+    hue = pow(hue, 2.0);
     float radius = length(toCenter)*2.0;
     radius = sqrt(radius);
-    //radius = pow(radius, 3.0); 
+    //radius = pow(radius, 3.0);
     //pow先慢后快，中间饱和度低四周饱和度高，sqrt先快后慢，中间饱和度高四周饱和度低
 
     // Map the angle (-PI to PI) to the Hue (from 0 to 1)
     // and the Saturation to the radius
-    color = hsb2rgb(vec3((angle/TWO_PI)+0.5,radius,1.0));
+    color = hsb2rgb(vec3(hue+u_time*0.5,radius,1.0));
 
     gl_FragColor = vec4(color,1.0);
 }
