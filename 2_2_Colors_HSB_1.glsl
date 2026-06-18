@@ -9,6 +9,9 @@ uniform float u_time;
 //  https://www.shadertoy.com/view/MsS3Wc
 vec3 hsb2rgb( in vec3 c ){
     //in表示只读输入，out-只读输入、in-只写输出、inout-既读又写
+    //int newFunction(in vec4 aVec4,   // read-only
+    //            out vec3 aVec3,    // write-only
+    //            inout int aInt);   // read-write
     //c是定义的变量名，c.x是色相（hue），c.y是饱和度（saturation），c.z是亮度（brightness）
     vec3 rgb = clamp(abs(mod(c.x*6.0+vec3(0.0,4.0,2.0),
                              6.0)-3.0)-1.0,
