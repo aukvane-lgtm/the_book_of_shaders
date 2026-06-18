@@ -17,3 +17,5 @@ void main() {
 
     gl_FragColor = vec4(color,1.0);
 }
+
+// uniform→定义颜色→**初始化**→渐变百分比→混合→输出
