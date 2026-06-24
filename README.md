@@ -8,7 +8,7 @@
 - 2.1 shaping functions
 - 2.2 Color
 	- [[2.2 Color_mix]]
-	- [[2.2 Color_rgb2hsb]]
+	- [2.2 Color_rgb2hsb](notes/2.2%20Color_rgb2hsb.md)
 	- [2.2 Color_HSB的极坐标转换](notes/2.2%20Color_HSB的极坐标转换.md)
 	- [[2.2.q Color_HSB_exercise]]
 - [[2.3 Shape]]
